@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature Converter</title>
+</head>
+<style>
+    html{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(198, 144, 144);
+    }
+    .main{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(225, 225, 225);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        color: rgb(78, 164, 162)
+    }
+    #tempinput{
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid black;
+        height: 25px;
+    }
+    label{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    button{
+        padding: 10px 20px ;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: 600;
+        background-color: chocolate;
+        color: aliceblue;
+        letter-spacing: 2px ;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+</style>
+<body>
+    
+    <div class="main">
+        <label for="tempinput"><h1>tamperature Converter</h1></label>
+        <input type="text" id="tempinput"><br>
+        <br>
+        <input type="radio" name="" id="clsTofr">
+        <label for="clsTofr">Celsius to Fahrenheit</label>
+        <br>
+        <br>
+        <input type="radio" name="" id="frtocls">
+        <label for="frtocls">Fahrenheit to Celsius</label>
+        <br>
+        <br>
+        <button id="Submit">Submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
